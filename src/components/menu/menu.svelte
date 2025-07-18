@@ -72,7 +72,7 @@
 		// FIXME: avoid rebuild menu every time for the same options
 		await rebuildMenu(svgElem, {
 			items: opts.items,
-			dividerLineLength: 28,
+			dividerLineLength: 70,
 			circleRadius: opts.circleRadius * scaleFactor,
 			iconOffset: 24,
 			iconSize: 8,
