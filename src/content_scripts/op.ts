@@ -247,19 +247,19 @@ export class OpExecutor {
 
             // TODO: avoid update prompt every time
             if (!this.checkDistance()) {
-                promptProxy.show("<em>out of range</em>")
+                //promptProxy.show("<em>out of range</em>")
             } else if (action) {
                 const template = action.prompt ? action.prompt : action.name
                 const tmpl = this.titleTemplateCache.get(template)
                 if (tmpl) {
                     const text = tmpl.substitute(new Map())
-                    promptProxy.show(text)
+                    //promptProxy.show(text)
                 } else {
                     log.V(`missing template instance: "${prompt}"`)
-                    promptProxy.show("<em>no template</em>")
+                    //promptProxy.show("<em>no template</em>")
                 }
             } else {
-                promptProxy.show("<em>no action</em>")
+                //promptProxy.show("<em>no action</em>")
             }
 
 
