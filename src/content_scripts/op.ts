@@ -145,7 +145,7 @@ export class OpExecutor {
     }
 
     private get timerTimeout(): number {
-        let timeout = 5 * 1000//5 second
+        let timeout = 2 * 1000//5 second
         if (this.config.features.has(Feature.retainComponent)) {
             timeout = 30 * 60 * 1000 // 30minute
         }
